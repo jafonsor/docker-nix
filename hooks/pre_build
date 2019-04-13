@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat bootstrap.sh | docker run --rm -i busybox sh > nix.tar.gz

@@ -17,6 +17,8 @@ push:
 
 clean:
 	rm -f nix.tar.gz
+	rm -rf build
+	rm -rf nix-*
 
 clean-image:
 	docker rmi "$(IMAGE_NAME):$(IMAGE_TAG)" || true
