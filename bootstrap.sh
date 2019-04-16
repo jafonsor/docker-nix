@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION=2.1.1
+VERSION=2.2.2
 BASEURL=http://nixos.org/releases/nix
 BASENAME=nix-$VERSION-x86_64-linux
 FILENAME=$BASENAME.tar.bz2

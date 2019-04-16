@@ -1,6 +1,7 @@
 
 FROM scratch
 ADD nix.tar.gz /
+ADD nix.conf /etc/nix/nix.conf
 ENV HOME="/root" TERM="linux" \
     PATH="/usr/local/bin:/usr/bin:/bin" \
     SSL_CERT_FILE="/usr/local/etc/ssl/certs/ca-bundle.crt" \

@@ -1,8 +1,8 @@
-IMAGE_NAME ?= docker.kopla.jyu.fi/tools/nix
-IMAGE_TAG ?= $(CI_BUILD_REF_NAME)
-
 # Defaults to current git tag, or branch if no tag
 CI_BUILD_REF_NAME ?= $(shell git describe --tags --exact-match 2>/dev/null || git name-rev --name-only HEAD)
+
+IMAGE_NAME ?= nix
+IMAGE_TAG ?= $(CI_BUILD_REF_NAME)
 
 all: build
 
