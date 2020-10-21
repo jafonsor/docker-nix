@@ -1,4 +1,4 @@
-IMAGE_NAME ?= docker.kopla.jyu.fi/tools/nix
+IMAGE_NAME ?= nix
 IMAGE_TAG ?= $(CI_BUILD_REF_NAME)
 
 # Defaults to current git tag, or branch if no tag

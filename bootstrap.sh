@@ -1,11 +1,13 @@
 #!/bin/sh
-VERSION=2.2.2
+VERSION=2.3.7
 BASEURL=http://nixos.org/releases/nix
 BASENAME=nix-$VERSION-x86_64-linux
-FILENAME=$BASENAME.tar.bz2
+# older versions use bz2
+# FILENAME=$BASENAME.tar.bz2
+FILENAME=$BASENAME.tar.xz
 
 # Download and unpack
-wget -O- $BASEURL/nix-$VERSION/$FILENAME | bzcat - | tar xf -
+wget -O- $BASEURL/nix-$VERSION/$FILENAME | xz -d - | tar xf -
 
 # Prepare build directory
 mkdir -p build/etc/nix build/nix/var/nix/profiles \
