@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION=2.3.7
+VERSION=2.3.10
 BASEURL=http://nixos.org/releases/nix
 BASENAME=nix-$VERSION-x86_64-linux
 # older versions use bz2
