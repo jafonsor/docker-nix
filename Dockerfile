@@ -13,7 +13,7 @@ RUN /nix/store/*-nix-*/bin/nix-store --init && \
         /nix/store/*-nix-* /nix/store/*-coreutils-* \
         /nix/store/*-curl-* /nix/store/*-cacert-* /nix/store/*-gnutar-* \
         /nix/store/*-xz-* /nix/store/*-gzip-* /nix/store/*-bzip2-* && \
-    nix-channel --add https://nixos.org/channels/nixos-19.03 nixpkgs && \
+    nix-channel --add https://nixos.org/channels/nixos-unstable nixpkgs && \
     nix-channel --update && \
     nix-env -i bash-interactive iana-etc which && \
     ln -sf /usr/local/bin/env /usr/bin && \
